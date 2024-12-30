@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khushi's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/decf466e89.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ----------------HEADER-------------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/assets/images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Khushi</span> Kala</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------ABOUT------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/images/avatar.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hey, I am Khushi Kala. I recently graduated with a Bachelor of
+              Technology in Computer Science and Engineering from Mahakal
+              Institute of Technology, Ujjain(M.P.). I possess technical skills
+              in Core Java, SQL, HTML5, CSS3, JavaScript and MySQL database. I
+              love to learn new things and new technologies as well.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Core Java</span><br />Skilled in Core Java, with a
+                  understanding of object-oriented programming.
+                </li>
+                <li>
+                  <span>SQL</span><br />Knowledgeable in SQL and MySQL, able to
+                  create and manage databases, and write queries for effective
+                  data storage and retrieval.
+                </li>
+                <li>
+                  <span>Web Development</span><br />Skilled in web development
+                  using HTML5, CSS3, and JavaScript to create responsive and
+                  interactive websites.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020-204</span><br />Bachelor of Technology in Computer
+                  Science & Engineering
+                </li>
+                <li>
+                  <span>2019-2020</span><br />Higher Secondary School(12th)
+                </li>
+                <li><span>2017-2018</span><br />High School(10th)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------PROJECTS----------- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-list">
+          <div>
+            <i class="fa-solid fa-pencil"></i>
+            <h2>Text Editor</h2>
+            <p>
+              It allows users to create, edit, and save text documents. The
+              application features a user-friendly interface for basic text
+              editing task like text formatting.
+            </p>
+            <a href="https://github.com/khushikala?tab=repositories"
+              >Link to GitHub Repository</a
+            >
+          </div>
+          <div>
+            <i class="fa-solid fa-file"></i>
+            <h2>Personal Portfolio</h2>
+            <p>
+              It has a clean, responsive design that works well on different
+              devices. This project shows the use of HTML5, CSS3 and JavaScript
+              demonstrating front-end development abilities.
+            </p>
+            <a href="https://github.com/khushikala?tab=repositories"
+              >Link to GitHub Repository</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------CONTACT--------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>khushikala28@gmail.com</p>
+            <div class="social-icons">
+              <a href="https://linkedin.com/in/khushikala"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/khushikala"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="/assets/resume/Khushi-Kala-Resume.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------JavaScript------------------ -->
+
+    <!-- -----------------about section(about-col-2)----------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <!-- ------------sidemenu---------- -->
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
+      // Close menu when clicking on a link inside the sidebar
+      document.querySelectorAll("#sidemenu li a").forEach(function(link) {
+        link.addEventListener("click", closemenu);
+      });
+
+      // Close menu when clicking outside the sidebar
+      document.addEventListener("click", function(event) {
+        if (
+          !sidemenu.contains(event.target) &&
+          event.target.closest(".fa-bars") === null
+        ) {
+          closemenu();
+        }
+      });
+    </script>
+
+    <!-- ---------contact section submit button------ -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbw5-WsXjuAa8DFgJ8DF8JNFkXt-7Ta2kFgMoW3W0WfCFtIGXc2_ZY5oWLRoC3-XUBnxVA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
