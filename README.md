@@ -1,4 +1,11 @@
 # personal-portfolio
-It is a personal website built with HTML5, CSS3 and JavaScript to display skills, and projects.  It has a clean, responsive design that works well on different devices. The project shows the use of HTML5 for website structure, CSS3 for styling, and JavaScript for adding dynamic features like form validation.
+# Description:
+A personal website built using HTML5, CSS3, and JavaScript to showcase skills, projects, and contact form. The site features a clean and responsive design that works seamlessly across various devices.
 
-You can view my portfolio here:  https://khushikala.netlify.app/
+# Features:
+HTML5: Provides the website's structure.
+CSS3: Handles styling and design elements.
+JavaScript: Adds dynamic functionality, including form validation and interactivity.]
+
+# Live Preview: 
+khushikala.netlify.app
