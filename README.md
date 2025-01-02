@@ -8,4 +8,4 @@ CSS3: Handles styling and design elements.\
 JavaScript: Adds dynamic functionality, including form validation and interactivity.
 
 # Live Preview: 
-khushikala.netlify.app
+https://khushikala.netlify.app/
