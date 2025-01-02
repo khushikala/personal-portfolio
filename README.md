@@ -4,8 +4,8 @@ A personal website built using HTML5, CSS3, and JavaScript to showcase skills, p
 
 # Features:
 <mark>HTML5</mark>: Provides the website's structure.\
-CSS3: Handles styling and design elements.\
-JavaScript: Adds dynamic functionality, including form validation and interactivity.
+<mark>CSS3</mark>: Handles styling and design elements.\
+<mark>JavaScript</mark>: Adds dynamic functionality, including form validation and interactivity.
 
 # Live Preview: 
 https://khushikala.netlify.app/
